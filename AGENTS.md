@@ -10,9 +10,10 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 ## 这个仓库
 
-田澳（Owen Tian）的个人介绍站。单页，中文优先。
+Owen 的个人介绍站。单页，中文优先。页面上的名字只写 Owen。
 
 - 文案只放在 `src/lib/content.ts`。改简历事实时改这一处。
+- 不要写回中文姓名、电话、出生日期、性别或 QQ。可以保留邮箱 `tianaowork@163.com` 和 GitHub。
 - 不要编造指标、学校、经历或仓库。GitHub 链接必须是 `Brucefly007` 上真实存在的项目。
 - 白沟箱包客服与 C# 采集工具没有对应公开仓库，不要补链接。
 - 不引入环境变量或密钥。页面是静态内容。

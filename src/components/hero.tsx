@@ -1,39 +1,26 @@
 import { education, profile, stats } from "@/lib/content";
 
+const spec = [
+  { label: "状态", value: profile.availability },
+  { label: "方向", value: profile.intent },
+  { label: "院校", value: education.school },
+  { label: "专业", value: "物联网工程" },
+  { label: "成绩", value: `${education.gpa} · 前 10%` },
+  { label: "时间", value: education.period },
+];
+
 export function Hero() {
   return (
     <section className="hero" id="hero">
       <div className="wrap">
         <div className="hero__grid">
-          <div>
-            <p className="kicker">
-              <i aria-hidden="true" />
-              {profile.cohort} · {profile.role}
-            </p>
-            <h1 className="wordmark">{profile.nameZh}</h1>
-            <p className="wordmark-en">{profile.nameEn}</p>
-          </div>
-          <aside className="dossier" aria-label="个人档案">
-            <div className="dossier__top">
-              <span className="dossier__status">
-                <i aria-hidden="true" />
-                {profile.availability}
-              </span>
-              <span>DOSSIER / 01</span>
-            </div>
-            <div className="dossier__mark" aria-hidden="true">
-              澳
-            </div>
-            <p className="dossier__id">
-              <strong>{profile.nameZh}</strong>
-              {profile.role}
-              <br />
-              {profile.intent}
-              <br />
-              {profile.coords} · {profile.location}
-            </p>
-          </aside>
           <div className="hero__copy">
+            <p className="kicker">
+              {profile.cohort}
+              <span aria-hidden="true"> / </span>
+              {profile.role}
+            </p>
+            <h1 className="wordmark">{profile.name}</h1>
             <p className="lede">{profile.lede}</p>
             <div className="hero__actions">
               <a className="btn btn--solid" href="#work">
@@ -44,6 +31,14 @@ export function Hero() {
               </a>
             </div>
           </div>
+          <dl className="spec">
+            {spec.map((row) => (
+              <div key={row.label}>
+                <dt>{row.label}</dt>
+                <dd>{row.value}</dd>
+              </div>
+            ))}
+          </dl>
         </div>
         <ul className="stats">
           {stats.map((item) => (
@@ -53,9 +48,6 @@ export function Hero() {
             </li>
           ))}
         </ul>
-        <p className="edu__meta hero__edu">
-          {education.school} · {education.major} · {education.period}
-        </p>
       </div>
     </section>
   );

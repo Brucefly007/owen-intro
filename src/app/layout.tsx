@@ -24,22 +24,14 @@ const mono = IBM_Plex_Mono({
   display: "swap",
 });
 
-const title = `${profile.nameZh} · ${profile.nameEn} — ${profile.role}`;
-const description = `${profile.nameZh}（${profile.nameEn}），${profile.cohort}${profile.role}，${profile.location}，${profile.availability}。方向：${profile.intent}。作品包括 MCP 工具网关、RAG 知识库、白沟箱包智能客服与高并发采集工具。`;
+const title = `${profile.name} — ${profile.role}`;
+const description = `${profile.name}，${profile.cohort}${profile.role}，${profile.availability}。方向：${profile.intent}。作品包括 MCP 工具网关、RAG 知识库、白沟箱包智能客服与高并发采集工具。`;
 
 export const metadata: Metadata = {
   title,
   description,
-  authors: [{ name: profile.nameZh, url: profile.githubHref }],
-  keywords: [
-    profile.nameZh,
-    profile.nameEn,
-    profile.role,
-    "RAG",
-    "MCP",
-    "Agent",
-    "LangGraph",
-  ],
+  authors: [{ name: profile.name, url: profile.githubHref }],
+  keywords: [profile.name, profile.role, "RAG", "MCP", "Agent", "LangGraph"],
   openGraph: {
     title,
     description,
@@ -57,17 +49,10 @@ export const viewport: Viewport = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
-  name: profile.nameZh,
-  alternateName: profile.nameEn,
+  name: profile.name,
   jobTitle: profile.role,
   email: profile.email,
-  telephone: profile.phone,
   url: profile.githubHref,
-  address: {
-    "@type": "PostalAddress",
-    addressLocality: profile.location,
-    addressCountry: "CN",
-  },
   alumniOf: {
     "@type": "CollegeOrUniversity",
     name: "河北工程技术学院",

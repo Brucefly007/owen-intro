@@ -2,7 +2,7 @@
   "name": "owen-intro",
   "version": "1.0.0",
   "private": true,
-  "description": "田澳（Owen Tian）个人介绍 / 简历站",
+  "description": "Owen 个人介绍 / 简历站",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

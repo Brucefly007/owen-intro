@@ -1,4 +1,4 @@
-# 田澳 · Owen Tian
+# Owen
 
 个人介绍 / 简历站。Next.js（App Router）+ TypeScript + Tailwind CSS，深色编辑式排版。
 

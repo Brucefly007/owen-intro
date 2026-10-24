@@ -1,16 +1,9 @@
 export const profile = {
-  nameZh: "田澳",
-  nameEn: "Owen Tian",
+  name: "Owen",
   role: "AI 应用开发工程师",
   intent: "大模型应用 · Agent · RAG",
   cohort: "2026 届",
   availability: "可立即到岗",
-  gender: "男",
-  birth: "2003.08",
-  location: "河北保定",
-  coords: "N 38°51′  E 115°29′",
-  phone: "15690340362",
-  phoneHref: "tel:15690340362",
   email: "tianaowork@163.com",
   emailHref: "mailto:tianaowork@163.com",
   github: "github.com/Brucefly007",
@@ -59,55 +52,6 @@ export const stats = [
   { value: "0.89", label: "RAG Recall@5" },
 ] as const;
 
-export type SkillLevel = "熟练" | "项目" | "应用" | "可读";
-
-export const skills: {
-  name: string;
-  detail: string;
-  level: SkillLevel;
-  ticks: number;
-}[] = [
-  { name: "Python", detail: "asyncio · 类型注解 · 依赖管理", level: "熟练", ticks: 11 },
-  { name: "C# / .NET 8", detail: "WPF 高并发采集客户端", level: "项目", ticks: 9 },
-  { name: "Java / Go", detail: "可读懂并做简单开发", level: "可读", ticks: 4 },
-  {
-    name: "大模型 API",
-    detail: "OpenAI · DeepSeek · 通义 · Claude",
-    level: "应用",
-    ticks: 8,
-  },
-  {
-    name: "Prompt 工程",
-    detail: "Few-shot · CoT · JSON Schema · SSE",
-    level: "应用",
-    ticks: 8,
-  },
-  {
-    name: "Agent 编排",
-    detail: "LangGraph · LangChain · MCP · Dify",
-    level: "应用",
-    ticks: 8,
-  },
-  {
-    name: "RAG / 向量库",
-    detail: "Milvus · BGE-M3 · RRF · Rerank",
-    level: "应用",
-    ticks: 9,
-  },
-  {
-    name: "后端与数据",
-    detail: "FastAPI · MySQL / PostgreSQL · Redis",
-    level: "应用",
-    ticks: 8,
-  },
-  {
-    name: "工程化",
-    detail: "pytest · Docker · CI 评测门禁 · 结构化日志",
-    level: "应用",
-    ticks: 7,
-  },
-];
-
 export const skillGroups = [
   {
     title: "编程语言",
@@ -150,8 +94,6 @@ export type Project = {
   linkLabel?: string;
   footnote: string;
 };
-
-export const projectFilters = ["全部", "Agent", "RAG", "交付", "工程"] as const;
 
 export const projects: Project[] = [
   {
@@ -228,18 +170,3 @@ export const projects: Project[] = [
     footnote: "个人项目 · 未单独开源",
   },
 ];
-
-export const marquee = [
-  "MCP",
-  "LangGraph",
-  "RAG",
-  "BGE-M3",
-  "RRF",
-  "Milvus",
-  "FastAPI",
-  "Recall@5 0.89",
-  "工具成功率 99.2%",
-  "白沟客服",
-  ".NET 8",
-  "600–700 rps",
-] as const;
