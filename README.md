@@ -27,4 +27,4 @@ npm start
 - [MCP 工具网关](https://github.com/Brucefly007/mcp-gateway)
 - [RAG 知识库](https://github.com/Brucefly007/rag-knowledge-base)
 
-白沟箱包客服是本地商家交付，高并发采集工具未单独开源，页面上不附仓库链接。
+箱包电商智能客服是给产业带商家的交付，高并发采集工具未单独开源，页面上不附仓库链接。

@@ -25,7 +25,7 @@ const mono = IBM_Plex_Mono({
 });
 
 const title = `${profile.name} — ${profile.role}`;
-const description = `${profile.name}，${profile.role}。方向：${profile.intent}。作品包括 MCP 工具网关、RAG 知识库、白沟箱包智能客服与高并发采集工具。`;
+const description = `${profile.name}，${profile.role}。方向：${profile.intent}。作品包括 MCP 工具网关、RAG 知识库、箱包电商智能客服与高并发采集工具。`;
 
 export const metadata: Metadata = {
   title,
