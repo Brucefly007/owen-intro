@@ -22,9 +22,6 @@ export function Frame({ children }: { children: React.ReactNode }) {
                 {item.label}
               </a>
             ))}
-            <a className="nav__status" href="#contact">
-              {profile.availability}
-            </a>
           </nav>
           <button
             className="nav__toggle"
@@ -44,9 +41,6 @@ export function Frame({ children }: { children: React.ReactNode }) {
                   {item.label}
                 </a>
               ))}
-              <a href="#contact" onClick={() => setOpen(false)}>
-                {profile.availability}
-              </a>
             </div>
           </nav>
         ) : null}
@@ -55,9 +49,6 @@ export function Frame({ children }: { children: React.ReactNode }) {
       <footer className="site-footer">
         <div className="wrap site-footer__bar">
           <span>© 2026 {profile.name}</span>
-          <span>
-            {profile.cohort} · {profile.availability}
-          </span>
         </div>
       </footer>
     </>

@@ -13,10 +13,7 @@ export function Contact() {
           <span className="section-index">04</span>
           <h2 className="section-title">联系</h2>
         </div>
-        <p className="lede contact__sub">
-          聊聊 Agent、RAG，或者一个需要落地的真实场景。
-        </p>
-        <p className="contact__status">Open to work · {profile.availability}</p>
+        <p className="lede contact__sub">聊聊 Agent、RAG，或者一个需要落地的真实场景。</p>
         <ul className="contact-list">
           {channels.map((channel) => (
             <li key={channel.label}>

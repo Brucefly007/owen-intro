@@ -1,4 +1,4 @@
-import { about, education, skillGroups } from "@/lib/content";
+import { about, skillGroups } from "@/lib/content";
 
 export function About() {
   return (
@@ -8,33 +8,11 @@ export function About() {
           <span className="section-index">02</span>
           <h2 className="section-title">关于</h2>
         </div>
-        <div className="split">
-          <div>
-            <div className="prose">
-              {about.paragraphs.map((paragraph) => (
-                <p key={paragraph}>{paragraph}</p>
-              ))}
-            </div>
-            <p className="pull">{about.pull}</p>
-          </div>
-          <article className="edu">
-            <p className="edu__label">教育经历</p>
-            <h3 className="edu__school">{education.school}</h3>
-            <p className="edu__major">{education.major}</p>
-            <p className="edu__period">{education.period}</p>
-            <ul className="edu__scores">
-              <li>
-                平均成绩 {education.gpa} {education.gpaScale}
-              </li>
-              <li>{education.rank}</li>
-            </ul>
-            <ul className="courses">
-              {education.courses.map((course) => (
-                <li key={course}>{course}</li>
-              ))}
-            </ul>
-            <p className="thesis">{education.thesis}</p>
-          </article>
+        <div className="prose">
+          {about.paragraphs.map((paragraph) => (
+            <p key={paragraph}>{paragraph}</p>
+          ))}
+          <p className="pull">{about.pull}</p>
         </div>
         <div className="skill-block">
           <h3 className="block-title">专业技能</h3>

@@ -2,14 +2,12 @@ export const profile = {
   name: "Owen",
   role: "AI 应用开发工程师",
   intent: "大模型应用 · Agent · RAG",
-  cohort: "2026 届",
-  availability: "可立即到岗",
   email: "tianaowork@163.com",
   emailHref: "mailto:tianaowork@163.com",
   github: "github.com/Brucefly007",
   githubHref: "https://github.com/Brucefly007",
   lede:
-    "物联网工程本科在读，四个项目全部独立完成：从白沟箱包商家的客服痛点做出第一版自动客服，再工程化成带评测体系的知识库平台，接着做了 MCP 工具网关与 Agent 编排。",
+    "四个项目全部独立完成：从白沟箱包商家的客服痛点做出第一版自动客服，再工程化成带评测体系的知识库平台，接着做了 MCP 工具网关与 Agent 编排。",
 } as const;
 
 export const nav = [
@@ -18,24 +16,6 @@ export const nav = [
   { href: "#work", label: "作品" },
   { href: "#contact", label: "联系" },
 ] as const;
-
-export const education = {
-  school: "河北工程技术学院",
-  major: "物联网工程（全日制本科）",
-  period: "2024.09 – 2026.06",
-  gpa: "81.73",
-  gpaScale: "/ 100",
-  rank: "专业排名前 10%",
-  courses: [
-    "Python 程序设计",
-    "数据库原理及应用",
-    "计算机网络",
-    "Linux 操作系统",
-    "操作系统",
-  ],
-  thesis:
-    "毕业设计：基于 ESP32-CAM 的环境监测与自动投喂系统（C/C++、MQTT、上位机）。",
-} as const;
 
 export const about = {
   paragraphs: [
@@ -46,10 +26,10 @@ export const about = {
 } as const;
 
 export const stats = [
-  { value: "81.73", label: "平均成绩 / 100" },
-  { value: "前 10%", label: "专业排名" },
   { value: "99.2%", label: "工具调用成功率" },
   { value: "0.89", label: "RAG Recall@5" },
+  { value: "约 84%", label: "常见问题准确率" },
+  { value: "600–700", label: "采集请求 / 秒" },
 ] as const;
 
 export const skillGroups = [
